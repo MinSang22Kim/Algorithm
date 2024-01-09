@@ -8,7 +8,6 @@ public class Test4 {
 		Scanner scan = new Scanner(System.in);
 		Random random = new Random();
 		System.out.println("202014889 김민상");
-		int k = (int) (Math.random() * 4);
 		while (true) {
 			System.out.print("입력>> ");
 
