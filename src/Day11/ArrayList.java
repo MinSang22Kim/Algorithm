@@ -77,14 +77,14 @@ public class ArrayList<E> implements ListInterface<E> {
 			System.out.println("Error!");
 	}
 
-	private final int NOTFOUND = -1;
+	private final int NOT_FOUND = -1;
 
 	public int indexOf(E x) {
 		int i = 0;
 		while (i < numItems && ((Comparable) item[i]).compareTo(x) != 0)
 			i++;
 		if (i == numItems)
-			return NOTFOUND;
+			return NOT_FOUND;
 		else
 			return i;
 	}
