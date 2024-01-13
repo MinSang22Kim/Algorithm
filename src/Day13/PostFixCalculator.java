@@ -12,6 +12,7 @@ public class PostFixCalculator {
 		for (;;) {
 
 		}
+
 		System.out.print("Answer: ");
 		scan.close();
 	}
