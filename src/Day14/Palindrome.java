@@ -5,8 +5,6 @@ import Day13.LinkedStack;
 public class Palindrome {
 	public static void main(String[] args) {
 		System.out.println("Palindrome Check!");
-//		String str = "kkookk";
-//		String str = "alignngila";
 		String str = "lioninoil";
 		boolean t = isPalindrome(str);
 		System.out.println("Is " + str + " Palindrome?: " + t);
