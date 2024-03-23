@@ -1,3 +1,3 @@
-# Algorithm
+# Back-End
 
-🪖 About the 2nd year winter semester k-software competency enhancement bootcamp
+🪖 About Back-End skills in k-software competency enhancement bootcamp
