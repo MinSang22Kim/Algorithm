@@ -20,9 +20,9 @@ public class Main {
 
         int cnt = 0;
         for (int i = 0; i < size.length; i++) {
-            cnt += size[i] / T;
+            cnt += size[i] / T; // 몫으로 묶음 추가
             if (size[i] % T != 0) {
-                cnt++;
+                cnt++; // 나머지가 있으면 1추가(묶음)
             }
         }
 
