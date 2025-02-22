@@ -3,22 +3,18 @@ import java.util.Arrays;
 class Solution {
     public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
+        int a = 0;
         
-        for(int i = 0; i < commands.length; i++){
-            int start = commands[i][0] - 1;
-            int end = commands[i][1] - 1;
-            int k = commands[i][2] - 1;
+        for(int[] info : commands){
+            int i = info[0];
+            int j = info[1];
+            int k = info[2];
             
-            int[] needSort = new int[end - start + 1];
-            int a = 0;
-            
-            for(int j = start; j <= end; j++){
-                needSort[a++] = array[j];
-            }
-            
-            Arrays.sort(needSort);
-            answer[i] = needSort[k];
+            int[] temp = Arrays.copyOfRange(array, i-1, j);
+            Arrays.sort(temp);
+            answer[a++] = temp[k-1];
         }
+        
         return answer;
     }
 }
