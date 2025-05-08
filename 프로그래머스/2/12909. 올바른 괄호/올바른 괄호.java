@@ -1,15 +1,10 @@
 class Solution {
     boolean solution(String s) {
-        int count=0;
+        int count = 0;
         for(char c : s.toCharArray()){
-            if(c == '('){
-                count++;
-            }
-            else{
-                count--;
-                if(count < 0) return false;
-            }
+            count += (c=='(') ? 1 : -1;
+            if(count < 0) return false;
         }
-        return count==0;
+        return count == 0;
     }
 }
